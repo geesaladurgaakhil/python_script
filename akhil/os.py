@@ -1,0 +1,21 @@
+import os
+
+# getting environment variables
+source_server_name=os.environ.get('SOURCE_DATABASE_HOST')
+source_user_name=os.environ.get('SOURCE_DATABASE_USER')
+source_password=os.environ.get('SOURCE_DATABASE_PASSWORD')
+source_database=os.environ.get('SOURCE_DATABASE_NAME')
+target_server_name=os.environ.get('DATABASE_HOST')
+target_user_name=os.environ.get('DATABASE_USER')
+target_password=os.environ.get('DATABASE_PASSWORD')
+target_database=os.environ.get('DATABASE_NAME')
+stage=os.environ.get('STAGE')
+print(source_server_name)
+print(source_user_name)
+print(source_password)
+print(source_database)
+print(target_server_name)
+print(target_user_name)
+print(target_password)
+print(target_database)
+print(stage)
